@@ -17,7 +17,7 @@ jobs:
       - name: Checkout the latest code
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.SECRET_TOKEN }}
       - name: Set Current Year
         id: CURRENT_YEAR
         run: |
@@ -52,4 +52,4 @@ jobs:
           delete-branch: true
           body: "minor: Bump year in all projects to ${{ env.YEAR }}"
           title: "minor: Bump year in all projects to ${{ env.YEAR }}"
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.SECRET_TOKEN }}
