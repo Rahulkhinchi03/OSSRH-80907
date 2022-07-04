@@ -22,7 +22,6 @@ git add . && git commit -m "minor: bump year to $CURR_YEAR" && git push origin m
 mkdir -p .ci-temp/bump-year
 cd .ci-temp/bump-year
 
-git config --global --add url."git@github.com:Rahulkhinchi03/action-testing-2.git"
 checkout_from git@github.com:Rahulkhinchi03/action-testing-2.git
 
 ./../../.ci/bump-license-year.sh "$PREV_YEAR" "$CURR_YEAR" action-testing-2
