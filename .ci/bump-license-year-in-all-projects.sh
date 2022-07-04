@@ -15,8 +15,8 @@ echo "CURR_YEAR=$CURR_YEAR"
 echo "PREV_YEAR=$PREV_YEAR"
 
 ./.ci/bump-license-year.sh "$PREV_YEAR" "$CURR_YEAR" .
-git config --system user.name "Rahulkhinchi03"
-git config --system user.email "rahulkhinchirk7@gmail.com"
+git config --global user.name "Rahulkhinchi03"
+git config --global user.email "rahulkhinchirk7@gmail.com"
 git add . && git commit -m "minor: bump year to $CURR_YEAR" && git push origin main
 
 mkdir -p .ci-temp/bump-year
@@ -29,7 +29,7 @@ checkout_from git@github.com:Rahulkhinchi03/action-testing-2.git
 
 cd action-testing-2
 git init
-git config --system user.name "Rahulkhinchi03"
-git config --system user.email "rahulkhinchirk7@gmail.com"
+git config --global user.name "Rahulkhinchi03"
+git config --global user.email "rahulkhinchirk7@gmail.com"
 git add . && git commit -m "minor: bump year to $CURR_YEAR" && git push origin main
 cd ../
